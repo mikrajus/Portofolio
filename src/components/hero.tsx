@@ -1,5 +1,6 @@
 import SideRays from "@/components/SideRays";
 import { socials } from "@/lib/data";
+import { normalizeImagePath } from "@/lib/utils";
 
 export default function Hero() {
   return (
@@ -99,7 +100,7 @@ export default function Hero() {
         <div className="hero__visual">
           <div className="hero__portrait">
             <img
-              src="/assets/images/profile.webp"
+              src={normalizeImagePath("assets/images/profile.webp")}
               alt="Portrait of Mikrajuz Sulthan"
               width="440"
               height="440"

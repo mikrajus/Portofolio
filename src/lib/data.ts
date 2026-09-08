@@ -60,7 +60,7 @@ export const projectList = [
     architectureFlow: ["ESP32 Sensors", "MQTT Protocol", "Node.js API", "React Dashboard"],
     stack: ["ESP32", "Sensors", "MQTT", "JavaScript", "Node.js"],
     github: "https://github.com/mikrajus/youthfarmkit",
-    image: "/assets/images/mockup-youthfarmkit.webp",
+    image: "assets/images/mockup-youthfarmkit.webp",
     imageAlt: "Screenshot of YouthFarmKit smart farming dashboard",
   },
   {
@@ -82,7 +82,7 @@ export const projectList = [
     ],
     architectureFlow: ["Flutter App", "SQLite Storage", "WHO Z-Score Engine", "Cloud Postgres Sync"],
     stack: ["Flutter", "Node.js", "SQLite", "PostgreSQL"],
-    image: "/assets/images/mockup-aapodita.webp",
+    image: "assets/images/mockup-aapodita.webp",
     imageAlt: "Screenshot of AA-PoDiTa child growth monitoring app",
   },
   {
@@ -104,7 +104,7 @@ export const projectList = [
     ],
     architectureFlow: ["Camera Stream", "YOLOv8 Model", "TFLite Engine", "Clinical UI Overlay"],
     stack: ["Flutter", "Python", "YOLOv8", "PyTorch", "TFLite"],
-    image: "/assets/images/mockup-gigoedetection.webp",
+    image: "assets/images/mockup-gigoedetection.webp",
     imageAlt: "Screenshot of Gigoe Detection dental caries app",
   },
   {

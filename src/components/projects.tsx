@@ -2,6 +2,7 @@ import { useState } from "react";
 import { SectionHead } from "@/components/section-head";
 import { Reveal } from "@/components/reveal";
 import { usePortfolioData } from "@/lib/portfolio-context";
+import { normalizeImagePath } from "@/lib/utils";
 
 const CheckIcon = () => (
   <svg
@@ -19,6 +20,8 @@ const CheckIcon = () => (
 );
 
 function ProjectCard({ project }: { project: ReturnType<typeof usePortfolioData>["projects"][number] }) {
+  const imageUrl = normalizeImagePath(project.image);
+
   return (
     <Reveal className="w-full">
       <div className="p-5 md:p-6 lg:p-7 rounded-2xl bg-white border border-neutral-200/90 hover:border-amber-500/60 transition-all duration-300 shadow-xl group text-left">
@@ -119,11 +122,11 @@ function ProjectCard({ project }: { project: ReturnType<typeof usePortfolioData>
           </div>
 
           {/* Right Column: Screenshot Preview */}
-          {project.image && (
+          {imageUrl && (
             <div className="lg:col-span-5 w-full flex justify-center lg:justify-end">
               <div className="relative overflow-hidden rounded-xl border border-neutral-200 group-hover:border-amber-500/40 transition-colors shadow-md bg-white p-1.5">
                 <img
-                  src={project.image}
+                  src={imageUrl}
                   alt={project.imageAlt || project.name}
                   width={380}
                   loading="lazy"
