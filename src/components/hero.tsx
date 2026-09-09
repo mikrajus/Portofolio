@@ -1,25 +1,9 @@
-import SideRays from "@/components/SideRays";
 import { socials } from "@/lib/data";
 import { normalizeImagePath } from "@/lib/utils";
 
 export default function Hero() {
   return (
     <section className="hero" aria-label="Introduction">
-      <div className="hero__rays">
-        <SideRays
-          speed={2.5}
-          rayColor1="#84CC16"
-          rayColor2="#0a71e3"
-          intensity={2}
-          spread={2}
-          origin="top-right"
-          tilt={0}
-          saturation={1.5}
-          blend={0.75}
-          falloff={1.6}
-          opacity={1.0}
-        />
-      </div>
       <div className="container hero__inner">
         <div className="hero__content">
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 text-xs font-semibold tracking-wide mb-4 w-fit shadow-sm backdrop-blur-md">
