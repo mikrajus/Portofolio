@@ -58,10 +58,10 @@ export default function About() {
           title="Bridging Hardware & Software to Build Real-World Solutions"
         />
 
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch mt-6 text-left">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-stretch mt-6 text-left">
           {/* Main Bio Card */}
           <Reveal className="lg:col-span-6 flex">
-            <div className="w-full p-6 md:p-8 rounded-2xl bg-white border border-neutral-200/90 shadow-xl flex flex-col justify-between hover:border-amber-500/60 transition-colors">
+            <div className="w-full p-6 md:p-8 rounded-3xl bg-white border border-neutral-200/90 shadow-xl flex flex-col justify-between hover:border-amber-500/60 transition-colors">
               <div>
                 <div className="flex flex-wrap items-center gap-2 mb-4">
                   <span className="px-3 py-1 rounded-full text-xs font-bold bg-amber-500/15 border border-amber-500/30 text-amber-700">
@@ -97,15 +97,15 @@ export default function About() {
           </Reveal>
 
           {/* Pillars Grid */}
-          <div className="lg:col-span-6 grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <div className="lg:col-span-6 grid grid-cols-1 sm:grid-cols-2 gap-5 md:gap-6">
             {pillars.map((pillar) => (
               <Reveal key={pillar.title} className="flex">
-                <div className="w-full p-5 rounded-2xl bg-white border border-neutral-200/90 hover:border-amber-500/60 transition-all duration-300 shadow-md flex flex-col justify-between group">
+                <div className="w-full p-5 md:p-6 rounded-2xl bg-white border border-neutral-200/90 hover:border-amber-500/60 transition-all duration-300 shadow-md flex flex-col justify-between group">
                   <div>
                     <div className="p-2.5 rounded-xl bg-neutral-100 border border-neutral-200 w-fit mb-3 group-hover:scale-105 transition-transform">
                       {pillar.icon}
                     </div>
-                    <h4 className="text-sm font-bold text-neutral-900 mb-1 group-hover:text-amber-600 transition-colors">
+                    <h4 className="text-sm font-bold text-neutral-900 mb-1.5 group-hover:text-amber-600 transition-colors">
                       {pillar.title}
                     </h4>
                     <p className="text-xs text-neutral-600 leading-relaxed font-medium">

@@ -7,10 +7,10 @@ export default function Education() {
     <section id="education" className="section" aria-labelledby="education-title">
       <div className="container">
         <SectionHead eyebrow="Education" title="Academic Background" />
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6 text-left">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-10 mt-8 text-left">
           {education.map((e) => (
             <Reveal key={e.school}>
-              <div className="h-full p-6 rounded-2xl bg-white border border-neutral-200/90 hover:border-amber-500/60 transition-all shadow-xl flex flex-col justify-between">
+              <div className="h-full p-6 md:p-8 rounded-3xl bg-white border border-neutral-200/90 hover:border-amber-500/60 transition-all shadow-xl flex flex-col justify-between">
                 <div>
                   <div className="flex items-center justify-between mb-2">
                     <span className="text-xs font-bold px-3 py-1 rounded-full bg-amber-500/15 border border-amber-500/30 text-amber-800">

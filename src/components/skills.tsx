@@ -46,11 +46,11 @@ export default function Skills() {
     <section id="skills" className="section" aria-labelledby="skills-title">
       <div className="container">
         <SectionHead eyebrow="Skills & Technologies" title="What I work with" />
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8 text-left">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-10 mt-8 text-left">
           {skills.map((group) => (
             <Reveal key={group.group}>
-              <div className="h-full p-6 rounded-2xl bg-white border border-neutral-200/90 hover:border-amber-500/60 transition-all duration-300 shadow-xl group">
-                <div className="flex items-center gap-3 mb-4 pb-3 border-b border-neutral-200">
+              <div className="h-full p-6 md:p-7 rounded-3xl bg-white border border-neutral-200/90 hover:border-amber-500/60 transition-all duration-300 shadow-xl group">
+                <div className="flex items-center gap-3 mb-5 pb-4 border-b border-neutral-200">
                   <div className="p-2.5 rounded-xl bg-neutral-100 border border-neutral-200 group-hover:scale-105 transition-transform">
                     {renderCategoryIcon(group.icon)}
                   </div>
@@ -62,7 +62,7 @@ export default function Skills() {
                   {group.items.map((item) => (
                     <span
                       key={item}
-                      className="px-3.5 py-1.5 rounded-xl text-sm font-semibold bg-neutral-100 border border-neutral-200/90 text-neutral-800 hover:text-amber-700 hover:bg-amber-500/10 hover:border-amber-500/40 transition-all duration-200 shadow-sm cursor-default"
+                      className="px-3.5 py-1.5 rounded-xl text-xs font-semibold bg-neutral-100 border border-neutral-200/90 text-neutral-800 hover:text-amber-700 hover:bg-amber-500/10 hover:border-amber-500/40 transition-all duration-200 shadow-xs cursor-default"
                     >
                       {item}
                     </span>
