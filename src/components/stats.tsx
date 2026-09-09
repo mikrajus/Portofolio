@@ -5,7 +5,7 @@ const renderIcon = (iconName: string) => {
   switch (iconName) {
     case "academic":
       return (
-        <svg className="w-6 h-6 text-amber-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+        <svg className="w-6 h-6 text-blue-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
           <path d="M22 10v6M2 10l10-5 10 5-10 5z"/>
           <path d="M6 12v5c3 3 9 3 12 0v-5"/>
         </svg>
@@ -45,7 +45,7 @@ export default function Stats() {
             {statsData.map((stat, idx) => (
               <div
                 key={idx}
-                className="stat-card p-5.5 rounded-2xl bg-white border border-neutral-200/90 hover:border-amber-500/60 transition-all duration-300 shadow-xl flex flex-col items-center text-center group"
+                className="stat-card p-5.5 rounded-2xl bg-white border border-neutral-200/90 hover:border-blue-500/60 transition-all duration-300 shadow-xl flex flex-col items-center text-center group"
               >
                 <div className="p-3 rounded-xl bg-neutral-100 border border-neutral-200 mb-3 group-hover:scale-110 transition-transform">
                   {renderIcon(stat.icon)}

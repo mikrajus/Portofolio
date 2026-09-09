@@ -141,7 +141,7 @@ export default function AdminDashboard() {
         {/* Modal Header */}
         <div className="flex items-center justify-between px-6 py-4 border-b border-neutral-800 bg-neutral-950/50">
           <div className="flex items-center gap-3">
-            <div className="w-8 h-8 rounded-xl bg-amber-500/10 border border-amber-500/30 flex items-center justify-center text-amber-400 font-bold">
+            <div className="w-8 h-8 rounded-xl bg-blue-500/10 border border-blue-500/30 flex items-center justify-center text-blue-400 font-bold">
               ⚙️
             </div>
             <div>
@@ -169,7 +169,7 @@ export default function AdminDashboard() {
             onClick={() => setActiveTab("exp")}
             className={`px-4 py-2 text-xs font-bold rounded-t-xl transition-colors ${
               activeTab === "exp"
-                ? "bg-amber-500 text-neutral-950"
+                ? "bg-blue-600 text-white"
                 : "text-neutral-400 hover:text-neutral-200"
             }`}
           >
@@ -179,7 +179,7 @@ export default function AdminDashboard() {
             onClick={() => setActiveTab("proj")}
             className={`px-4 py-2 text-xs font-bold rounded-t-xl transition-colors ${
               activeTab === "proj"
-                ? "bg-amber-500 text-neutral-950"
+                ? "bg-blue-600 text-white"
                 : "text-neutral-400 hover:text-neutral-200"
             }`}
           >
@@ -189,7 +189,7 @@ export default function AdminDashboard() {
             onClick={() => setActiveTab("skill")}
             className={`px-4 py-2 text-xs font-bold rounded-t-xl transition-colors ${
               activeTab === "skill"
-                ? "bg-amber-500 text-neutral-950"
+                ? "bg-blue-600 text-white"
                 : "text-neutral-400 hover:text-neutral-200"
             }`}
           >
@@ -199,7 +199,7 @@ export default function AdminDashboard() {
             onClick={() => setActiveTab("cert")}
             className={`px-4 py-2 text-xs font-bold rounded-t-xl transition-colors ${
               activeTab === "cert"
-                ? "bg-amber-500 text-neutral-950"
+                ? "bg-blue-600 text-white"
                 : "text-neutral-400 hover:text-neutral-200"
             }`}
           >
@@ -213,7 +213,7 @@ export default function AdminDashboard() {
           {activeTab === "exp" && (
             <div className="space-y-6">
               <form onSubmit={handleAddExp} className="p-4 rounded-2xl bg-neutral-950/60 border border-neutral-800 space-y-3">
-                <h3 className="text-xs font-bold text-amber-400 uppercase tracking-wider">Tambah Pengalaman Baru</h3>
+                <h3 className="text-xs font-bold text-blue-400 uppercase tracking-wider">Tambah Pengalaman Baru</h3>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                   <input
                     type="text"
@@ -221,7 +221,7 @@ export default function AdminDashboard() {
                     required
                     value={expForm.role}
                     onChange={(e) => setExpForm({ ...expForm, role: e.target.value })}
-                    className="px-3 py-2 text-xs rounded-xl bg-neutral-900 border border-neutral-700 text-neutral-100 focus:outline-none focus:border-amber-500"
+                    className="px-3 py-2 text-xs rounded-xl bg-neutral-900 border border-neutral-700 text-neutral-100 focus:outline-none focus:border-blue-500"
                   />
                   <input
                     type="text"
@@ -229,7 +229,7 @@ export default function AdminDashboard() {
                     required
                     value={expForm.org}
                     onChange={(e) => setExpForm({ ...expForm, org: e.target.value })}
-                    className="px-3 py-2 text-xs rounded-xl bg-neutral-900 border border-neutral-700 text-neutral-100 focus:outline-none focus:border-amber-500"
+                    className="px-3 py-2 text-xs rounded-xl bg-neutral-900 border border-neutral-700 text-neutral-100 focus:outline-none focus:border-blue-500"
                   />
                 </div>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
@@ -238,14 +238,14 @@ export default function AdminDashboard() {
                     placeholder="Periode (contoh: 2025 - 2026)"
                     value={expForm.period}
                     onChange={(e) => setExpForm({ ...expForm, period: e.target.value })}
-                    className="px-3 py-2 text-xs rounded-xl bg-neutral-900 border border-neutral-700 text-neutral-100 focus:outline-none focus:border-amber-500"
+                    className="px-3 py-2 text-xs rounded-xl bg-neutral-900 border border-neutral-700 text-neutral-100 focus:outline-none focus:border-blue-500"
                   />
                   <input
                     type="text"
                     placeholder="Tags dipisah koma (contoh: Arduino, ESP32, Python)"
                     value={expForm.tags}
                     onChange={(e) => setExpForm({ ...expForm, tags: e.target.value })}
-                    className="px-3 py-2 text-xs rounded-xl bg-neutral-900 border border-neutral-700 text-neutral-100 focus:outline-none focus:border-amber-500"
+                    className="px-3 py-2 text-xs rounded-xl bg-neutral-900 border border-neutral-700 text-neutral-100 focus:outline-none focus:border-blue-500"
                   />
                 </div>
                 <textarea
@@ -253,9 +253,9 @@ export default function AdminDashboard() {
                   rows={2}
                   value={expForm.desc}
                   onChange={(e) => setExpForm({ ...expForm, desc: e.target.value })}
-                  className="w-full px-3 py-2 text-xs rounded-xl bg-neutral-900 border border-neutral-700 text-neutral-100 focus:outline-none focus:border-amber-500 resize-none"
+                  className="w-full px-3 py-2 text-xs rounded-xl bg-neutral-900 border border-neutral-700 text-neutral-100 focus:outline-none focus:border-blue-500 resize-none"
                 />
-                <button type="submit" className="px-4 py-2 rounded-xl bg-amber-500 text-neutral-950 font-bold text-xs hover:bg-amber-400 transition-colors">
+                <button type="submit" className="px-4 py-2 rounded-xl bg-blue-600 text-white font-bold text-xs hover:bg-blue-500 transition-colors">
                   + Tambah Pengalaman
                 </button>
               </form>
@@ -266,7 +266,7 @@ export default function AdminDashboard() {
                 {experience.map((item, idx) => (
                   <div key={idx} className="flex items-center justify-between p-3 rounded-xl bg-neutral-950/40 border border-neutral-800 text-xs">
                     <div>
-                      <div className="font-bold text-neutral-100">{item.role} <span className="text-amber-400">@ {item.org}</span></div>
+                      <div className="font-bold text-neutral-100">{item.role} <span className="text-blue-400">@ {item.org}</span></div>
                       <div className="text-[11px] text-neutral-400">{item.period} — {item.desc}</div>
                     </div>
                     <button
@@ -285,7 +285,7 @@ export default function AdminDashboard() {
           {activeTab === "proj" && (
             <div className="space-y-6">
               <form onSubmit={handleAddProj} className="p-4 rounded-2xl bg-neutral-950/60 border border-neutral-800 space-y-3">
-                <h3 className="text-xs font-bold text-amber-400 uppercase tracking-wider">Tambah Proyek Baru</h3>
+                <h3 className="text-xs font-bold text-blue-400 uppercase tracking-wider">Tambah Proyek Baru</h3>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                   <input
                     type="text"
@@ -293,12 +293,12 @@ export default function AdminDashboard() {
                     required
                     value={projForm.name}
                     onChange={(e) => setProjForm({ ...projForm, name: e.target.value })}
-                    className="px-3 py-2 text-xs rounded-xl bg-neutral-900 border border-neutral-700 text-neutral-100 focus:outline-none focus:border-amber-500"
+                    className="px-3 py-2 text-xs rounded-xl bg-neutral-900 border border-neutral-700 text-neutral-100 focus:outline-none focus:border-blue-500"
                   />
                   <select
                     value={projForm.tabCategory}
                     onChange={(e) => setProjForm({ ...projForm, tabCategory: e.target.value })}
-                    className="px-3 py-2 text-xs rounded-xl bg-neutral-900 border border-neutral-700 text-neutral-100 focus:outline-none focus:border-amber-500"
+                    className="px-3 py-2 text-xs rounded-xl bg-neutral-900 border border-neutral-700 text-neutral-100 focus:outline-none focus:border-blue-500"
                   >
                     <option value="iot">📡 IoT & Embedded Systems</option>
                     <option value="mobile">📱 Mobile App & AI</option>
@@ -310,14 +310,14 @@ export default function AdminDashboard() {
                     placeholder="Badge (contoh: 🏆 Top 180 Innovillage)"
                     value={projForm.badge}
                     onChange={(e) => setProjForm({ ...projForm, badge: e.target.value })}
-                    className="px-3 py-2 text-xs rounded-xl bg-neutral-900 border border-neutral-700 text-neutral-100 focus:outline-none focus:border-amber-500"
+                    className="px-3 py-2 text-xs rounded-xl bg-neutral-900 border border-neutral-700 text-neutral-100 focus:outline-none focus:border-blue-500"
                   />
                   <input
                     type="text"
                     placeholder="Tech Stack dipisah koma (contoh: ESP32, MQTT, Flutter)"
                     value={projForm.stack}
                     onChange={(e) => setProjForm({ ...projForm, stack: e.target.value })}
-                    className="px-3 py-2 text-xs rounded-xl bg-neutral-900 border border-neutral-700 text-neutral-100 focus:outline-none focus:border-amber-500"
+                    className="px-3 py-2 text-xs rounded-xl bg-neutral-900 border border-neutral-700 text-neutral-100 focus:outline-none focus:border-blue-500"
                   />
                 </div>
                 <input
@@ -325,7 +325,7 @@ export default function AdminDashboard() {
                   placeholder="Architecture Flow dipisah koma (contoh: ESP32, MQTT, Node.js, Dashboard)"
                   value={projForm.architectureFlow}
                   onChange={(e) => setProjForm({ ...projForm, architectureFlow: e.target.value })}
-                  className="w-full px-3 py-2 text-xs rounded-xl bg-neutral-900 border border-neutral-700 text-neutral-100 focus:outline-none focus:border-amber-500"
+                  className="w-full px-3 py-2 text-xs rounded-xl bg-neutral-900 border border-neutral-700 text-neutral-100 focus:outline-none focus:border-blue-500"
                 />
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                   <input
@@ -333,14 +333,14 @@ export default function AdminDashboard() {
                     placeholder="GitHub Repo URL (opsional)"
                     value={projForm.github}
                     onChange={(e) => setProjForm({ ...projForm, github: e.target.value })}
-                    className="px-3 py-2 text-xs rounded-xl bg-neutral-900 border border-neutral-700 text-neutral-100 focus:outline-none focus:border-amber-500"
+                    className="px-3 py-2 text-xs rounded-xl bg-neutral-900 border border-neutral-700 text-neutral-100 focus:outline-none focus:border-blue-500"
                   />
                   <input
                     type="text"
                     placeholder="Image Screenshot URL (opsional)"
                     value={projForm.image}
                     onChange={(e) => setProjForm({ ...projForm, image: e.target.value })}
-                    className="px-3 py-2 text-xs rounded-xl bg-neutral-900 border border-neutral-700 text-neutral-100 focus:outline-none focus:border-amber-500"
+                    className="px-3 py-2 text-xs rounded-xl bg-neutral-900 border border-neutral-700 text-neutral-100 focus:outline-none focus:border-blue-500"
                   />
                 </div>
                 <textarea
@@ -349,9 +349,9 @@ export default function AdminDashboard() {
                   required
                   value={projForm.desc}
                   onChange={(e) => setProjForm({ ...projForm, desc: e.target.value })}
-                  className="w-full px-3 py-2 text-xs rounded-xl bg-neutral-900 border border-neutral-700 text-neutral-100 focus:outline-none focus:border-amber-500 resize-none"
+                  className="w-full px-3 py-2 text-xs rounded-xl bg-neutral-900 border border-neutral-700 text-neutral-100 focus:outline-none focus:border-blue-500 resize-none"
                 />
-                <button type="submit" className="px-4 py-2 rounded-xl bg-amber-500 text-neutral-950 font-bold text-xs hover:bg-amber-400 transition-colors">
+                <button type="submit" className="px-4 py-2 rounded-xl bg-blue-600 text-white font-bold text-xs hover:bg-blue-500 transition-colors">
                   + Tambah Proyek
                 </button>
               </form>
@@ -362,7 +362,7 @@ export default function AdminDashboard() {
                 {projects.map((p, idx) => (
                   <div key={idx} className="flex items-center justify-between p-3 rounded-xl bg-neutral-950/40 border border-neutral-800 text-xs">
                     <div>
-                      <div className="font-bold text-neutral-100">{p.name} <span className="text-amber-400">({p.tabCategory})</span></div>
+                      <div className="font-bold text-neutral-100">{p.name} <span className="text-blue-400">({p.tabCategory})</span></div>
                       <div className="text-[11px] text-neutral-400">{p.desc}</div>
                     </div>
                     <button
@@ -381,12 +381,12 @@ export default function AdminDashboard() {
           {activeTab === "skill" && (
             <div className="space-y-6">
               <form onSubmit={handleAddSkill} className="p-4 rounded-2xl bg-neutral-950/60 border border-neutral-800 space-y-3">
-                <h3 className="text-xs font-bold text-amber-400 uppercase tracking-wider">Tambah Item Skill Baru</h3>
+                <h3 className="text-xs font-bold text-blue-400 uppercase tracking-wider">Tambah Item Skill Baru</h3>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                   <select
                     value={skillGroup}
                     onChange={(e) => setSkillGroup(e.target.value)}
-                    className="px-3 py-2 text-xs rounded-xl bg-neutral-900 border border-neutral-700 text-neutral-100 focus:outline-none focus:border-amber-500"
+                    className="px-3 py-2 text-xs rounded-xl bg-neutral-900 border border-neutral-700 text-neutral-100 focus:outline-none focus:border-blue-500"
                   >
                     {skills.map((s) => (
                       <option key={s.group} value={s.group}>
@@ -400,10 +400,10 @@ export default function AdminDashboard() {
                     required
                     value={newSkillItem}
                     onChange={(e) => setNewSkillItem(e.target.value)}
-                    className="px-3 py-2 text-xs rounded-xl bg-neutral-900 border border-neutral-700 text-neutral-100 focus:outline-none focus:border-amber-500"
+                    className="px-3 py-2 text-xs rounded-xl bg-neutral-900 border border-neutral-700 text-neutral-100 focus:outline-none focus:border-blue-500"
                   />
                 </div>
-                <button type="submit" className="px-4 py-2 rounded-xl bg-amber-500 text-neutral-950 font-bold text-xs hover:bg-amber-400 transition-colors">
+                <button type="submit" className="px-4 py-2 rounded-xl bg-blue-600 text-white font-bold text-xs hover:bg-blue-500 transition-colors">
                   + Tambah Skill
                 </button>
               </form>
@@ -436,12 +436,12 @@ export default function AdminDashboard() {
           {activeTab === "cert" && (
             <div className="space-y-6">
               <form onSubmit={handleAddCert} className="p-4 rounded-2xl bg-neutral-950/60 border border-neutral-800 space-y-3">
-                <h3 className="text-xs font-bold text-amber-400 uppercase tracking-wider">Tambah Sertifikat Baru</h3>
+                <h3 className="text-xs font-bold text-blue-400 uppercase tracking-wider">Tambah Sertifikat Baru</h3>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                   <select
                     value={certOrg}
                     onChange={(e) => setCertOrg(e.target.value)}
-                    className="px-3 py-2 text-xs rounded-xl bg-neutral-900 border border-neutral-700 text-neutral-100 focus:outline-none focus:border-amber-500"
+                    className="px-3 py-2 text-xs rounded-xl bg-neutral-900 border border-neutral-700 text-neutral-100 focus:outline-none focus:border-blue-500"
                   >
                     {certifications.map((c) => (
                       <option key={c.org} value={c.org}>
@@ -455,7 +455,7 @@ export default function AdminDashboard() {
                     required
                     value={certForm.name}
                     onChange={(e) => setCertForm({ ...certForm, name: e.target.value })}
-                    className="px-3 py-2 text-xs rounded-xl bg-neutral-900 border border-neutral-700 text-neutral-100 focus:outline-none focus:border-amber-500"
+                    className="px-3 py-2 text-xs rounded-xl bg-neutral-900 border border-neutral-700 text-neutral-100 focus:outline-none focus:border-blue-500"
                   />
                 </div>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
@@ -464,17 +464,17 @@ export default function AdminDashboard() {
                     placeholder="Tanggal / Tahun (contoh: Sep 2026)"
                     value={certForm.date}
                     onChange={(e) => setCertForm({ ...certForm, date: e.target.value })}
-                    className="px-3 py-2 text-xs rounded-xl bg-neutral-900 border border-neutral-700 text-neutral-100 focus:outline-none focus:border-amber-500"
+                    className="px-3 py-2 text-xs rounded-xl bg-neutral-900 border border-neutral-700 text-neutral-100 focus:outline-none focus:border-blue-500"
                   />
                   <input
                     type="text"
                     placeholder="Tag Kategori (contoh: Flutter, IoT)"
                     value={certForm.tag}
                     onChange={(e) => setCertForm({ ...certForm, tag: e.target.value })}
-                    className="px-3 py-2 text-xs rounded-xl bg-neutral-900 border border-neutral-700 text-neutral-100 focus:outline-none focus:border-amber-500"
+                    className="px-3 py-2 text-xs rounded-xl bg-neutral-900 border border-neutral-700 text-neutral-100 focus:outline-none focus:border-blue-500"
                   />
                 </div>
-                <button type="submit" className="px-4 py-2 rounded-xl bg-amber-500 text-neutral-950 font-bold text-xs hover:bg-amber-400 transition-colors">
+                <button type="submit" className="px-4 py-2 rounded-xl bg-blue-600 text-white font-bold text-xs hover:bg-blue-500 transition-colors">
                   + Tambah Sertifikat
                 </button>
               </form>
@@ -483,7 +483,7 @@ export default function AdminDashboard() {
               <div className="space-y-4">
                 {certifications.map((c) => (
                   <div key={c.org} className="p-3.5 rounded-xl bg-neutral-950/40 border border-neutral-800 space-y-2 text-xs">
-                    <div className="font-bold text-amber-400">{c.org}</div>
+                    <div className="font-bold text-blue-400">{c.org}</div>
                     <div className="space-y-1">
                       {c.items.map((item, idx) => (
                         <div key={idx} className="flex items-center justify-between p-2 rounded bg-neutral-900 border border-neutral-800">
@@ -512,7 +512,7 @@ export default function AdminDashboard() {
           <div className="flex gap-2">
             <button
               onClick={handleCopyJSON}
-              className="px-3.5 py-1.5 rounded-xl text-xs font-semibold bg-neutral-800 text-amber-300 border border-amber-500/40 hover:bg-amber-500/10 transition-colors"
+              className="px-3.5 py-1.5 rounded-xl text-xs font-semibold bg-neutral-800 text-blue-300 border border-blue-500/40 hover:bg-blue-500/10 transition-colors"
             >
               {copied ? "✓ JSON Copied!" : "📥 Export JSON Data"}
             </button>

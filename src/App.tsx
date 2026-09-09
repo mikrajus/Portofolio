@@ -20,13 +20,13 @@ function App() {
   return (
     <ThemeProvider>
       <PortfolioProvider>
-        {/* Fixed Top Background: Radiant glow and WebGL rays remain fixed at top during page scroll */}
+        {/* Fixed Top Background: Blue radiant glow and WebGL rays */}
         <div className="fixed top-0 left-0 right-0 h-screen pointer-events-none z-1 overflow-hidden">
           <div className="fixed-top-bg-glow" />
           <SideRays
             speed={2.5}
-            rayColor1="#84CC16"
-            rayColor2="#0a71e3"
+            rayColor1="#2563EB"
+            rayColor2="#3B82F6"
             intensity={2.8}
             spread={2.5}
             origin="top-right"

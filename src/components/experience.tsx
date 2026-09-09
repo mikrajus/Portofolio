@@ -14,7 +14,7 @@ const renderRoleIcon = (iconName?: string) => {
       );
     case "code":
       return (
-        <svg className="w-4 h-4 text-amber-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+        <svg className="w-4 h-4 text-blue-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
           <polyline points="16 18 22 12 16 6"/>
           <polyline points="8 6 2 12 8 18"/>
         </svg>
@@ -30,7 +30,7 @@ const renderRoleIcon = (iconName?: string) => {
       );
     default:
       return (
-        <svg className="w-4 h-4 text-amber-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+        <svg className="w-4 h-4 text-blue-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
           <circle cx="12" cy="12" r="10"/>
         </svg>
       );
@@ -51,13 +51,13 @@ export default function Experience() {
             <Reveal key={idx}>
               <div className="relative group">
                 {/* Node icon */}
-                <div className="absolute -left-[35px] md:-left-[43px] top-1 p-2 rounded-full bg-white border border-neutral-300 group-hover:border-amber-500 transition-colors shadow-md">
+                <div className="absolute -left-[35px] md:-left-[43px] top-1 p-2 rounded-full bg-white border border-neutral-300 group-hover:border-blue-500 transition-colors shadow-md">
                   {renderRoleIcon(item.icon)}
                 </div>
 
-                <div className="p-6 md:p-7 rounded-2xl bg-white border border-neutral-200/90 group-hover:border-amber-500/60 transition-all duration-300 shadow-lg">
+                <div className="p-6 md:p-7 rounded-2xl bg-white border border-neutral-200/90 group-hover:border-blue-500/60 transition-all duration-300 shadow-lg">
                   <div className="flex flex-wrap items-center justify-between gap-2 mb-2.5">
-                    <span className="px-3 py-1 rounded-full text-xs font-bold bg-amber-500/15 border border-amber-500/30 text-amber-800">
+                    <span className="px-3 py-1 rounded-full text-xs font-bold bg-blue-500/15 border border-blue-500/30 text-blue-700">
                       {item.period}
                     </span>
                     <span className="text-xs text-neutral-600 font-bold">
@@ -65,7 +65,7 @@ export default function Experience() {
                     </span>
                   </div>
 
-                  <h3 className="text-xl font-extrabold text-neutral-900 mb-1.5 group-hover:text-amber-600 transition-colors">
+                  <h3 className="text-xl font-extrabold text-neutral-900 mb-1.5 group-hover:text-blue-600 transition-colors">
                     {item.role}
                   </h3>
                   <p className="text-neutral-700 text-sm leading-relaxed mb-4 font-medium">
@@ -93,7 +93,7 @@ export default function Experience() {
         {/* Organizational Activities */}
         <div className="mt-14 text-left">
           <h3 className="text-lg font-bold text-neutral-900 mb-6 flex items-center gap-2">
-            <span className="w-2.5 h-2.5 rounded-full bg-amber-500" />
+            <span className="w-2.5 h-2.5 rounded-full bg-blue-600" />
             Leadership & Organizational Involvement
           </h3>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
@@ -101,7 +101,7 @@ export default function Experience() {
               <Reveal key={i}>
                 <div className="h-full p-5.5 rounded-2xl bg-white border border-neutral-200/90 hover:border-neutral-400 transition-all shadow-md flex flex-col justify-between">
                   <div>
-                    <span className="text-xs text-amber-700 font-bold block mb-1">
+                    <span className="text-xs text-blue-700 font-bold block mb-1">
                       {act.period} &middot; {act.org}
                     </span>
                     <h4 className="font-bold text-neutral-900 mb-2">{act.title}</h4>

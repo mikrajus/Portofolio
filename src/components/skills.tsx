@@ -6,7 +6,7 @@ const renderCategoryIcon = (iconName: string) => {
   switch (iconName) {
     case "code":
       return (
-        <svg className="w-5 h-5 text-amber-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+        <svg className="w-5 h-5 text-blue-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
           <polyline points="16 18 22 12 16 6"/>
           <polyline points="8 6 2 12 8 18"/>
         </svg>
@@ -49,13 +49,13 @@ export default function Skills() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-10 mt-10 text-left">
           {skills.map((group) => (
             <Reveal key={group.group}>
-              <div className="h-full p-6.5 rounded-2xl bg-white border border-neutral-200/90 hover:border-amber-500/60 transition-all duration-300 shadow-xl group flex flex-col justify-between">
+              <div className="h-full p-6.5 rounded-2xl bg-white border border-neutral-200/90 hover:border-blue-500/60 transition-all duration-300 shadow-xl group flex flex-col justify-between">
                 <div>
                   <div className="flex items-center gap-3 mb-5 pb-3 border-b border-neutral-200">
                     <div className="p-2.5 rounded-xl bg-neutral-100 border border-neutral-200 group-hover:scale-105 transition-transform">
                       {renderCategoryIcon(group.icon)}
                     </div>
-                    <h3 className="text-lg font-bold text-neutral-900 group-hover:text-amber-600 transition-colors">
+                    <h3 className="text-lg font-bold text-neutral-900 group-hover:text-blue-600 transition-colors">
                       {group.group}
                     </h3>
                   </div>
@@ -63,7 +63,7 @@ export default function Skills() {
                     {group.items.map((item) => (
                       <span
                         key={item}
-                        className="px-3.5 py-1.5 rounded-xl text-sm font-semibold bg-neutral-100 border border-neutral-200/90 text-neutral-800 hover:text-amber-700 hover:bg-amber-500/10 hover:border-amber-500/40 transition-all duration-200 shadow-xs cursor-default"
+                        className="px-3.5 py-1.5 rounded-xl text-sm font-semibold bg-neutral-100 border border-neutral-200/90 text-neutral-800 hover:text-blue-700 hover:bg-blue-500/10 hover:border-blue-500/40 transition-all duration-200 shadow-xs cursor-default"
                       >
                         {item}
                       </span>

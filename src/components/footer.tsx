@@ -7,19 +7,19 @@ export default function Footer() {
   return (
     <footer className="py-8 bg-neutral-950 border-t border-neutral-800 text-center">
       <div className="container mx-auto px-4 flex flex-col md:flex-row items-center justify-between gap-4">
-        <a href="#home" className="text-sm font-bold tracking-tight text-neutral-200 hover:text-amber-400 transition-colors">
-          Mikrajuz<span className="text-amber-400">.</span>Sulthan
+        <a href="#home" className="text-sm font-bold tracking-tight text-neutral-200 hover:text-blue-400 transition-colors">
+          Mikrajuz<span className="text-blue-400">.</span>Sulthan
         </a>
 
         <div className="flex flex-wrap justify-center gap-4 text-xs font-medium text-neutral-400">
           {navLinks.map((link) => (
-            <a key={link.href} href={link.href} className="hover:text-amber-300 transition-colors">
+            <a key={link.href} href={link.href} className="hover:text-blue-400 transition-colors">
               {link.label}
             </a>
           ))}
           <button
             onClick={toggleAdmin}
-            className="text-amber-400/90 hover:text-amber-300 transition-colors font-bold flex items-center gap-1"
+            className="text-blue-400/90 hover:text-blue-300 transition-colors font-bold flex items-center gap-1"
           >
             <span>⚙️ Admin Panel</span>
           </button>
