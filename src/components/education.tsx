@@ -10,9 +10,9 @@ export default function Education() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-10 mt-8 text-left">
           {education.map((e) => (
             <Reveal key={e.school}>
-              <div className="h-full p-6 md:p-8 rounded-3xl bg-white border border-neutral-200/90 hover:border-amber-500/60 transition-all shadow-xl flex flex-col justify-between">
+              <div className="h-full p-6.5 rounded-2xl bg-white border border-neutral-200/90 hover:border-amber-500/60 transition-all shadow-xl flex flex-col justify-between">
                 <div>
-                  <div className="flex items-center justify-between mb-2">
+                  <div className="flex items-center justify-between mb-2.5">
                     <span className="text-xs font-bold px-3 py-1 rounded-full bg-amber-500/15 border border-amber-500/30 text-amber-800">
                       {e.meta}
                     </span>
@@ -20,7 +20,7 @@ export default function Education() {
                   <h3 className="text-xl font-extrabold text-neutral-900 mb-1">{e.school}</h3>
                   <p className="text-sm font-bold text-amber-700 mb-3">{e.program}</p>
                   {e.note && (
-                    <p className="text-xs text-neutral-600 leading-relaxed font-medium border-t border-neutral-200 pt-3">
+                    <p className="text-xs text-neutral-600 leading-relaxed font-medium border-t border-neutral-200 pt-3.5">
                       {e.note}
                     </p>
                   )}

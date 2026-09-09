@@ -34,9 +34,9 @@ export default function Contact() {
             Looking for an engineer for an IoT project, software development, internship, or full-time role? I&rsquo;d love to connect.
           </p>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12 my-10 text-left">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 my-8 text-left">
             {/* Quick Email & Direct Channels */}
-            <div className="p-6 md:p-8 rounded-3xl bg-white border border-neutral-200/90 shadow-xl flex flex-col justify-between">
+            <div className="p-6 rounded-2xl bg-white border border-neutral-200/90 shadow-xl flex flex-col justify-between">
               <div>
                 <h3 className="text-lg font-bold text-neutral-900 mb-2">Direct Channels</h3>
                 <p className="text-xs text-neutral-600 mb-6 font-medium">
@@ -44,7 +44,7 @@ export default function Contact() {
                 </p>
 
                 <div className="space-y-4">
-                  <div className="flex items-center justify-between p-3.5 rounded-xl bg-neutral-50 border border-neutral-200">
+                  <div className="flex items-center justify-between p-3 rounded-xl bg-neutral-50 border border-neutral-200">
                     <div className="flex items-center gap-3">
                       <svg className="w-5 h-5 text-amber-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                         <rect x="2" y="4" width="20" height="16" rx="2"/>
@@ -60,7 +60,7 @@ export default function Contact() {
                     </button>
                   </div>
 
-                  <div className="flex items-center gap-3 p-3.5 rounded-xl bg-neutral-50 border border-neutral-200">
+                  <div className="flex items-center gap-3 p-3 rounded-xl bg-neutral-50 border border-neutral-200">
                     <svg className="w-5 h-5 text-emerald-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                       <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.08 4.18 2 2 0 0 1 4.06 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/>
                     </svg>
@@ -80,7 +80,7 @@ export default function Contact() {
             </div>
 
             {/* Quick Contact Form */}
-            <form onSubmit={handleSubmit} className="p-6 md:p-8 rounded-3xl bg-white border border-neutral-200/90 shadow-xl flex flex-col gap-4">
+            <form onSubmit={handleSubmit} className="p-6 rounded-2xl bg-white border border-neutral-200/90 shadow-xl flex flex-col gap-4">
               <h3 className="text-lg font-bold text-neutral-900">Send a Message</h3>
               
               {submitted ? (

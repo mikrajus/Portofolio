@@ -41,11 +41,11 @@ export default function Stats() {
     <section className="stats-section py-8 bg-neutral-900/20 border-y border-neutral-800/40 backdrop-blur-md">
       <div className="container mx-auto px-4">
         <Reveal>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8">
             {statsData.map((stat, idx) => (
               <div
                 key={idx}
-                className="stat-card p-5 rounded-2xl bg-white border border-neutral-200/90 hover:border-amber-500/60 transition-all duration-300 shadow-xl flex flex-col items-center text-center group"
+                className="stat-card p-5.5 rounded-2xl bg-white border border-neutral-200/90 hover:border-amber-500/60 transition-all duration-300 shadow-xl flex flex-col items-center text-center group"
               >
                 <div className="p-3 rounded-xl bg-neutral-100 border border-neutral-200 mb-3 group-hover:scale-110 transition-transform">
                   {renderIcon(stat.icon)}
