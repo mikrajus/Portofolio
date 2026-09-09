@@ -12,8 +12,8 @@ export default function Certifications() {
 
   return (
     <section id="certifications" className="section" aria-labelledby="certs-title">
-      <div className="container flex flex-col items-center">
-        <SectionHead eyebrow="Certifications" title="Verified Continuous Learning" />
+      <div className="container flex flex-col items-center text-center">
+        <SectionHead eyebrow="Certifications" title="Verified Continuous Learning" center />
         
         {/* Organization Switcher Tabs */}
         <Reveal className="w-full flex justify-center">
@@ -35,46 +35,48 @@ export default function Certifications() {
         </Reveal>
 
         {/* Selected Organization Certifications Centered Card */}
-        <Reveal className="w-full flex justify-center">
-          <div className="w-full max-w-3xl p-6 md:p-8 rounded-3xl bg-white border border-neutral-200/90 shadow-2xl text-left">
-            <div className="flex items-center gap-3.5 pb-4 mb-6 border-b border-neutral-200">
-              <div className="w-11 h-11 rounded-2xl bg-amber-500/15 border border-amber-500/30 flex items-center justify-center text-amber-700 font-extrabold text-xl shadow-xs">
-                {currentOrgData.org.charAt(0)}
-              </div>
-              <div>
-                <h3 className="text-xl font-extrabold text-neutral-900">{currentOrgData.org}</h3>
-                <p className="text-xs text-neutral-600 font-semibold">Verified credentials & course completions</p>
-              </div>
-            </div>
-
-            <div className="space-y-4 md:space-y-5">
-              {currentOrgData.items.map((item, idx) => (
-                <div
-                  key={idx}
-                  className="flex flex-col sm:flex-row sm:items-center justify-between p-4.5 rounded-2xl bg-neutral-50/90 border border-neutral-200 hover:border-amber-500/50 hover:shadow-md transition-all gap-3"
-                >
-                  <div className="flex items-start gap-3">
-                    <svg className="w-5 h-5 text-amber-600 shrink-0 mt-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                      <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
-                      <polyline points="22 4 12 14.01 9 11.01"/>
-                    </svg>
-                    <div>
-                      <h4 className="font-bold text-neutral-900 text-sm leading-snug">{item.name}</h4>
-                      {item.tag && (
-                        <span className="inline-block mt-1.5 px-2.5 py-0.5 rounded-md text-[10px] uppercase font-bold tracking-wider bg-neutral-200/90 text-neutral-800">
-                          {item.tag}
-                        </span>
-                      )}
-                    </div>
-                  </div>
-                  <span className="text-xs font-mono text-neutral-600 font-semibold sm:text-right shrink-0">
-                    {item.date}
-                  </span>
+        <div className="w-full flex justify-center">
+          <Reveal className="w-full max-w-3xl">
+            <div className="w-full p-6 md:p-8 rounded-3xl bg-white border border-neutral-200/90 shadow-2xl text-left mx-auto">
+              <div className="flex items-center gap-3.5 pb-4 mb-6 border-b border-neutral-200">
+                <div className="w-11 h-11 rounded-2xl bg-amber-500/15 border border-amber-500/30 flex items-center justify-center text-amber-700 font-extrabold text-xl shadow-xs shrink-0">
+                  {currentOrgData.org.charAt(0)}
                 </div>
-              ))}
+                <div>
+                  <h3 className="text-xl font-extrabold text-neutral-900">{currentOrgData.org}</h3>
+                  <p className="text-xs text-neutral-600 font-semibold">Verified credentials & course completions</p>
+                </div>
+              </div>
+
+              <div className="space-y-4 md:space-y-5">
+                {currentOrgData.items.map((item, idx) => (
+                  <div
+                    key={idx}
+                    className="flex flex-col sm:flex-row sm:items-center justify-between p-4.5 rounded-2xl bg-neutral-50/90 border border-neutral-200 hover:border-amber-500/50 hover:shadow-md transition-all gap-3"
+                  >
+                    <div className="flex items-start gap-3">
+                      <svg className="w-5 h-5 text-amber-600 shrink-0 mt-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                        <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                        <polyline points="22 4 12 14.01 9 11.01"/>
+                      </svg>
+                      <div>
+                        <h4 className="font-bold text-neutral-900 text-sm leading-snug">{item.name}</h4>
+                        {item.tag && (
+                          <span className="inline-block mt-1.5 px-2.5 py-0.5 rounded-md text-[10px] uppercase font-bold tracking-wider bg-neutral-200/90 text-neutral-800">
+                            {item.tag}
+                          </span>
+                        )}
+                      </div>
+                    </div>
+                    <span className="text-xs font-mono text-neutral-600 font-semibold sm:text-right shrink-0">
+                      {item.date}
+                    </span>
+                  </div>
+                ))}
+              </div>
             </div>
-          </div>
-        </Reveal>
+          </Reveal>
+        </div>
       </div>
     </section>
   );
