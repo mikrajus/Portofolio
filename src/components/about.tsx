@@ -77,11 +77,11 @@ export default function About() {
                 </h3>
 
                 <p className="text-neutral-800 text-sm md:text-base font-medium leading-relaxed mb-4">
-                  Saya adalah lulusan Teknik Komputer dari Universitas Syiah Kuala yang berfokus pada integrasi hardware dan software.
+                  I'm a Computer Engineering graduate from Syiah Kuala University focusing on hardware and software integration.
                 </p>
 
                 <p className="text-neutral-600 text-sm leading-relaxed mb-6 font-normal">
-                  Saya memiliki pengalaman dalam merancang sistem embedded dari tahap penyusunan skema sirkuit hingga pemrograman mikrokontroler, serta membangun aplikasi mobile berbasis Flutter dan model Computer Vision untuk menyelesaikan permasalahan dunia nyata di bidang pertanian cerdas, kesehatan, dan infrastruktur IT.
+                  I have experience in designing embedded systems from the circuit schematic design stage to microcontroller programming, as well as building mobile applications based on Flutter and Computer Vision models to solve real-world problems in the fields of smart agriculture, healthcare, and IT infrastructure.
                 </p>
               </div>
 
