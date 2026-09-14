@@ -27,7 +27,7 @@ export default function Hero() {
             <a href="#projects" className="btn btn--primary">
               View Projects
             </a>
-            <a href={socials.resume} target="_blank" rel="noopener noreferrer" className="btn btn--ghost border border-blue-500/50 hover:bg-blue-500/10 text-blue-500 font-semibold">
+            <a href="https://drive.google.com/file/d/1y0JmUJX0DpUMnpqvO-mAVekmnV0ILWzI/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="btn btn--ghost border border-blue-500/50 hover:bg-blue-500/10 text-blue-500 font-semibold">
               <svg className="w-4 h-4 mr-1.5 inline-block text-blue-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                 <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3" />
               </svg>

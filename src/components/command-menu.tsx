@@ -133,6 +133,13 @@ export default function CommandMenu() {
             <span>Send Email</span>
             <span className="text-xs text-neutral-500">mikrajus@gmail.com</span>
           </button>
+          <button
+            onClick={() => handleSelect(socials.resume)}
+            className="w-full flex items-center justify-between px-3 py-2 rounded-xl text-sm font-medium text-neutral-300 hover:bg-blue-500/10 hover:text-blue-300 transition-colors text-left"
+          >
+            <span>Download CV</span>
+            <span className="text-xs text-neutral-500">Google Drive</span>
+          </button>
         </div>
       </div>
     </div>
