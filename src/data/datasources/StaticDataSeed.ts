@@ -18,7 +18,7 @@ export const socials = {
   github: "https://github.com/mikrajus",
   linkedin: "https://linkedin.com/in/mikrajuz-sulthan-644a7b246",
   email: "mailto:mikrajus@gmail.com",
-  resume: "#",
+  resume: "https://drive.google.com/file/d/1y0JmUJX0DpUMnpqvO-mAVekmnV0ILWzI/view?usp=sharing",
 };
 
 export const statsSeed: StatEntity[] = [
